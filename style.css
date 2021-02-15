@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+body ul {
+  width: 60vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+body ul li {
+  list-style: none
+}
+
+body ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 6px 18px;
+  position: relative;
+  transition: background-color .8s
+}
+
+body ul li a:hover {
+  background-color: #156ae9
+}
+
+body ul li a:hover::before {
+  left: -12px;
+  bottom: -12px;
+  opacity: 1
+}
+
+body ul li a:hover::after {
+  top: -12px;
+  right: -12px;
+  opacity: 1
+}
+
+body ul li a::before {
+  position: absolute;
+  content: '';
+  width: 18px;
+  height: 18px;
+  border: 2px solid #156ae9;
+  border-width: 0 0 2px 2px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: .2s
+}
+
+body ul li a::after {
+  position: absolute;
+  content: '';
+  width: 18px;
+  height: 18px;
+  border: 2px solid #156ae9;
+  border-width: 2px 2px 0 0;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  transition: .2s
+}
+
+/*# sourceMappingURL=./style.css.map */
